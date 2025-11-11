@@ -1,7 +1,7 @@
 FROM node:18-alpine As build
 
 WORKDIR /app
-COPY packege*.josn ./
+COPY package*.josn ./
 RUN npm install
 COPY . .
 RUN npm run build
